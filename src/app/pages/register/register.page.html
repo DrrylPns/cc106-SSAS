@@ -1,0 +1,102 @@
+<ion-header>
+  <ion-toolbar class="tlbrStyle">
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#" class="bckBtnStyle"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="bckTxt">Back to Login Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!--END OF HEADER -->
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Register Information</ion-card-title>
+    </ion-card-header>
+
+    <!-- USER INFORMATION -->
+    <ion-card-content>
+      <ion-item>
+        <ion-input
+          type="text"
+          label="Name"
+          labelPlacement="floating"
+          placeholder="Enter Name"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          type="email"
+          label="Email"
+          labelPlacement="floating"
+          placeholder="Enter Email"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          type="password"
+          label="Password"
+          labelPlacement="floating"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          type="password"
+          label="Confirm Password"
+          labelPlacement="floating"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          type="tel"
+          label="Contact Number"
+          labelPlacement="floating"
+        ></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <!-- ADDRESS INFORMATION -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title> Address Information </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-input
+          type="text"
+          label="Address"
+          labelPlacement="floating"
+          placeholder="Enter Address"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          type="text"
+          label="Barangay"
+          labelPlacement="floating"
+          placeholder="Enter Information"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          type="text"
+          label="City"
+          labelPlacement="floating"
+          placeholder="Enter City"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          type="tel"
+          label="Zip Code"
+          labelPlacement="floating"
+          placeholder="Enter Zip"
+        ></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <ion-button size="full" class="regBtn" (click)="register()"
+    >Register</ion-button
+  >
+</ion-content>

@@ -1,0 +1,31 @@
+.tlbrColor{
+    --background: #eae7dc;
+}
+
+.imgStyle{
+    opacity: 0.5;
+}
+
+.bgStyle{
+    --background: rgb(69, 68, 68);
+}
+    
+.contOne{
+    --background: url(../../../assets/imgs/bg_hero.jpg) 0 0/100% 100% no-repeat;
+    height: 70%;
+}
+
+.itemTransparent {
+    background-color: transparent !important;
+  }
+
+.item-content{
+    --background: #ddb00d;
+    height: 1000px;
+}
+
+.spacing-logo{
+    display: flex;
+    justify-content: space-around;
+}
+

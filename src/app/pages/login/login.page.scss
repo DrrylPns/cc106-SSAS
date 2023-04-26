@@ -1,0 +1,22 @@
+ion-content{
+    --background: #eae7dc;
+    --keyboard-offset: 0 !important
+}
+
+ion-button[color="dark"]{
+    text-transform: initial;
+    font-size: 14px;
+}
+
+.regBtn{
+    font-weight: 500;
+    --color: #225144;
+}
+
+.logTitle{
+    --color: #225144;
+}
+
+.logBtn{
+    --background: #225144;
+}

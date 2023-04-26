@@ -1,0 +1,64 @@
+<ion-content [fullscreen]="true">
+  <div class="flex-center">
+    <form [formGroup]="form">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title class="logTitle`"
+            >Sunny Side Animal Shelter</ion-card-title
+          >
+        </ion-card-header>
+
+        <ion-card-content>
+          <ion-input
+            type="email"
+            label="Email"
+            labelPlacement="floating"
+            placeholder="Enter a valid email"
+            formControlName="email"
+          ></ion-input>
+          <ion-label
+            color="danger"
+            *ngIf="form.get('email')?.touched && form.get('email')?.errors?.['required']"
+            >Please input your email</ion-label
+          >
+          <ion-label
+            color="danger"
+            *ngIf="form.get('email')?.touched && form.get('email')?.errors?.['email']"
+            >Email is invalid</ion-label
+          >
+
+          <ion-input
+            type="password"
+            label="Password"
+            labelPlacement="floating"
+            formControlName="password"
+          ></ion-input>
+          <ion-label
+            color="danger"
+            *ngIf="!form.controls['password'].valid && 
+        form.controls['password']?.touched"
+            >Please input your password</ion-label
+          >
+
+          <ion-button color="dark" fill="clear" size="full"
+            >Forgot Email/Password</ion-button
+          >
+          <ion-button
+            size="full"
+            class="logBtn"
+            [disabled]="!form.valid"
+            (click)="login()"
+            >LOGIN</ion-button
+          >
+          <ion-button
+            fill="clear"
+            size="full"
+            class="regBtn"
+            (click)="register()"
+            >REGISTER</ion-button
+          >
+        </ion-card-content>
+      </ion-card>
+    </form>
+  </div>
+</ion-content>
