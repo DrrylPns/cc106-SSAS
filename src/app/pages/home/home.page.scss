@@ -26,6 +26,10 @@
 
 .spacing-logo{
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
 }
 
+.logOutFcnt{
+    --background: #225144;
+}

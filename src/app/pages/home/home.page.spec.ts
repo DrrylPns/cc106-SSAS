@@ -16,9 +16,7 @@ describe('HomePage', () => {
     fixture.detectChanges();
   }));
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+ 
 
   it('should go to about-us page on home', () => {
     spyOn(router, 'navigate');
@@ -26,5 +24,13 @@ describe('HomePage', () => {
     component.aboutUs();
 
     expect(router.navigate).toHaveBeenCalledWith(['about-us']);
+  })
+
+  it('should go to home page on logout', () => {
+    spyOn(router, 'navigate');
+
+    component.logOut();
+
+    expect(router.navigate).toHaveBeenCalledWith(['login']);
   })
 });

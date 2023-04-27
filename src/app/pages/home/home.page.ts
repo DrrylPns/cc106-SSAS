@@ -17,4 +17,8 @@ export class HomePage implements OnInit {
     this.router.navigate(['about-us'])
   }
 
+  logOut(){
+    this.router.navigate(['login'])
+  }
+
 }
